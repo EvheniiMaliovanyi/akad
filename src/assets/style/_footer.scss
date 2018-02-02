@@ -1,0 +1,44 @@
+.ba-footer{
+	text-align: center;
+	color: $gray;	@include breakpoint(md){
+		text-align: right;
+	}
+	.col-md-5{
+		margin-top: 12px;
+	}
+
+
+}
+.ba-footer-menu{
+	float: none;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	@include breakpoint(sm){
+		flex-direction: row;
+		justify-content: center;
+	}
+	@include breakpoint(md){
+		justify-content: flex-start;
+	}
+
+	li{
+		@include breakpoint(sm){
+			&:not(:first-child):before{
+				content: "-";
+			}
+		}
+		a{
+			color: $gray;
+			display: inline-block;
+			vertical-align: middle;
+			text-transform: uppercase;
+			&:hover{
+				background: none;
+				color: $text-color;
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,34 @@
+.ba-contact{
+  &__address{
+    .ba-socails{
+      margin-bottom: 10px;
+    }
+  }
+
+
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+    input{
+      width: 48%;
+    }
+  }
+  &__address{
+    margin-top: 121px;
+    color:  #999999;
+    @media (max-width: $screen-md){
+      margin-top: 50px;
+    }
+    a{
+      color:  #999999;
+      &:hover{
+        color: $brand-primary;
+      }
+    }
+  }
+
+
+}
+.ba-map{
+  height: 841px;
+}

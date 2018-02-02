@@ -1,0 +1,116 @@
+.ba-intro{
+	&--about{
+		h1{
+			margin-bottom: 6px;
+
+		}
+		.ba-intro__body{
+			padding-bottom: 141px;
+		}
+	}
+}
+
+
+.ba-section{
+	&--benefits{
+		.ba-icon{
+			display: inline-block;
+			font-size: 30px;
+			background-color: $brand-primary;
+			width: 40px;
+			height: 40px;
+			color: #FFF;
+			line-height: 40px;
+			text-align: center;
+			vertical-align: middle;
+			margin-right: 13px;
+		}
+		.ba-row{
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 20px;
+		}
+	}
+	&--team{
+		.col-xs-6 {
+			img{
+				margin: 0 auto 30px;
+				display: block;
+			}
+		}
+
+	}
+	&__read{
+		background-color:  rgba(96, 96, 110, 0.1);
+		padding: 30px 0 30px 30px;
+		p{
+			display: inline-block;
+			font-size: 18px;
+			font-style: italic;
+			line-height: 2.7;
+			margin: 0;
+		}
+	}
+	&--clients{
+		.ba-col-slider{
+			margin-bottom: 75px;
+		}
+
+
+		.ba-slide{
+
+			&:focus{
+				outline: none;
+			}
+		}
+		.slick-dots{
+			position: absolute;
+			bottom: -50px;
+			left: 0;
+			right: 0;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-align-last: center;
+			li{
+				display: inline-block;
+				margin: 0 5px;
+			}
+			button{
+				bottom: 0;
+				display: block;
+				background-color:  #60606e;
+				width: 16px;
+				height: 5px;
+				border: 1px solid  transparent;
+				padding: 0;
+				outline: none;
+				line-height: 0;
+				font-size: 0;
+				color: transparent;
+				cursor: pointer;
+			}
+			.slick-active{
+				button{
+					background: $brand-primary;
+					width: 31px;
+				}
+			}
+		}
+
+
+
+
+
+		.ba-circleman{
+			margin: 0 auto;
+		}
+		.col-md-4{
+			margin-bottom: 30px;
+			img{
+				margin: 0 auto;
+			}
+		}
+	}
+
+}

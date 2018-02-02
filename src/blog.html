@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Blog | Akad</title>
+	//=include templates/_head.html
+</head>
+<body>
+
+
+
+	<div class="ba-intro ba-intro--about" style="background-image: url(./assets/img/bg.jpg)">
+		//=include templates/header.html
+		<div class="container">
+			<div class="ba-intro__body text-center">
+				<h1 class="ba-page-title">
+					blog posts
+				</h1>
+				<ol class="breadcrumb">
+					<li><a href="index.html">Home</a></li>
+					<li class="active">Blog</li>
+				</ol>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- BEGIN container  -->
+	<div class="container ba-section">
+		<div class="row">
+			<div class="col-md-8">
+				<main>
+					<article class="ba-post">
+						<a class="ba-post__img">
+							<img src="assets/img/blog-assets/blog-1.jpg" alt="THE BIG LEAGUES OUR TURN STRAIGHTNIN">
+						</a>
+						<div class="ba-post__meta">
+							<time class="ba-post__date bg-pimary" datetime="2015-10-13">
+								October 13, 2015
+							</time>
+							<span class="ba-post__comments">
+								<i class="ion-heart text-danger"></i>
+								15
+							</span>
+
+						</div>
+						<h2 class="ba-post__title">
+							<a href="single-post.html">
+								THE BIG LEAGUES OUR TURN STRAIGHTNIN
+							</a>
+
+						</h2>
+						<div class="ba-post__excerpt">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+						</div>
+						<a href="#" class="ba-link">continue reading
+							<i class="ion-arrow-right-c"></i>
+						</a>
+
+
+
+				</main>
+
+			</div>
+
+			<div class="col-md-3 col-md-offset-1">
+				<section class="ba-sidebar">
+					<div class="ba-widget">
+						<form class="ba-search-form" action="#">
+							<imput type=" search" required="" placeholder="SEARCH...">
+
+							</imput>
+
+
+						</form>
+					</div>
+					<div class="">
+						<h6 class="ba-widget__title">
+							Posts
+
+						</h6>
+						<ul class="nav nav-tabs" role="tablist">
+						    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+						    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+						    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+						    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+						  </ul>
+
+					</div>
+
+				</section>
+
+			</div>
+
+
+		</div>
+
+
+	</div>
+	<!-- END container -->
+
+
+
+	//=include templates/_subscribe.html
+	//=include templates/footer.html
+	//=include templates/scripts.html
+
+</body>
+</html>

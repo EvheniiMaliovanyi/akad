@@ -1,0 +1,158 @@
+.ba-post{
+	.ba-post:not(:last-child){
+		margin-bottom: 50px;
+		@include breakpoint(md){
+			margin-bottom: 100px;
+		}
+	}
+
+
+
+	&__img{
+		display: block;
+		margin-bottom: $grid-gutter-width;
+		overflow: hidden;
+
+		img{
+			display: block;
+			transform-origin: 10% 100%;
+			transition: transform .2s ease-in;
+		}
+		&:hover{
+			img{
+				transform: scale(1.1);
+			}
+		}
+	}
+	&__title{
+		font-size: 18px;
+		margin: 0 0 15px;
+	}
+	&__meta{
+		margin-bottom: 20px;
+		color: #ccc;
+		span{
+			display: inline-block;
+			margin: 0 6px 0 14px;
+		}
+		[class*="ion-"]{
+			font-size: 18px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	}
+	&__date{
+		font: 700 14px/1 $headings-font-family;
+		text-transform: uppercase;
+		padding: 5px 15px;
+	}
+	&__excerpt{
+		margin-bottom: 25px;
+	}
+	&__more{
+		text-transform: uppercase;
+		font: 700 14px/1 $headings-font-family;
+	}
+}
+.ba-widget{
+	margin-bottom: 45px;
+	&__title{
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	.ba-search-form{
+		display: flex;
+		justify-content: space-between;
+		background-color:  #ececec;
+		padding: 6px 19px;
+		color: #60606e;
+		input{
+			background: transparent;
+			border: none;
+			font-size: 12px;
+			&:focus{
+				outline: none;
+				border: none;
+				box-shadow: none
+			}
+		}
+		[placeholder]{
+			font-weight: 700;
+
+		}
+
+
+		&__button{
+			background: none;
+			border: none;
+			font-size: 18px;
+
+			&:focus, &:hover{
+				outline: none;
+				border: none;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+
+.nav-tabs{
+	border-bottom: 2px solid #e3e3e3;
+	display: flex;
+	& > li{
+		margin-bottom: -2px;
+		&.active{
+			& > a{
+				border-color: transparent transparent $brand-primary;
+				background: none;
+				border-width: 0 0 2px;
+				&:hover, &:active, &:focus{
+					border-color: transparent transparent $brand-primary;
+					color: $text-color;
+					border-width: 0 0 2px;
+				}
+			}
+
+		}
+		& > a{
+			font: 700 12px/1 $headings-font-family;
+			color:  #999999;
+			text-transform: uppercase;
+			border-width: 0 0 2px;
+			&:hover, &:active, &:focus{
+				background: none;
+				border-color: transparent;
+				color: $text-color;
+			}
+		}
+	}
+}
+
+
+.ba-tab-article{
+	margin-top: 10px;
+	float: left;
+	&:first-child{
+		margin-top: 29px;
+	}
+}
+.ba-tab-img{
+	max-width: 30%;
+	float: left;
+}
+.ba-tab-info{
+display: inline-block;
+max-width: 70%;
+padding-left: 15px;
+	h6{
+		font-size: 14px;
+		margin-bottom: 0;
+		line-height: 1.3;
+	}
+	time{
+		color:  #9a9a9a;
+		font-size: 12px;
+		font-weight: 400
+	}
+}

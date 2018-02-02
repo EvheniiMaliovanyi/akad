@@ -1,0 +1,28 @@
+@import "_mixins.scss";
+
+.navbar-default{
+    .navbar-nav > li > a{
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: $headings-font-family;
+        font-size: 12px;
+
+        @include breakpoint(xs){
+            color: #fff;
+            &:hover{
+                color: #FFF;
+                background: lighten(#5f5f6e, 10%);
+            }
+        }
+    }
+}
+
+.navbar-collapse{
+    @include breakpoint(xs){
+        background: #5f5f6e;
+        text-align: right;
+    }
+    &.in{
+        overflow: hidden;
+    }
+}
